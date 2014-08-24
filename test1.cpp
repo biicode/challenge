@@ -14,7 +14,7 @@ TEST(Solver, BasicDiagonalSparse) {
   }
   vector<double> sol=solver.SolveSparse(b);
   for(int i=0;i<size;i++)
-	  EXPECT_EQ(sol[i],1./(i+1));
+	  EXPECT_NEAR(sol[i],1./(i+1), 0.001);
 }
 TEST(Solver, BasicDiagonalDense) {
   SystemSolver solver;
