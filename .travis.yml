@@ -19,8 +19,10 @@ install:
 
 # command to run tests
 script:
-  - pwd
+  - bii init 
+  - bii new myuser/solver
+  - mv *.* blocks/myuser/solver
   - bii find
   - bii cpp:build
-  - ./bin/biicode_challenge_solvertool  
-  - ./bin/biicode_challenge_gtest_main
+  - ./bin/myuser_solver_solvertool  
+  - ./bin/myuser_solver_gtest_main
