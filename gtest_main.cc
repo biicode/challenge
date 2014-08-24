@@ -31,6 +31,7 @@
 
 #include "google/gtest/include/gtest/gtest.h"
 
+//bii:dependencies(+ test1.cpp)
 GTEST_API_ int main(int argc, char **argv) {
   std::cout << "Running main() from gtest_main.cc\n";
 
