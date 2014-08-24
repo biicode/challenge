@@ -20,6 +20,7 @@ install:
   - tar -xzf cmake-3.0.1-Linux-i386.tar.gz
   - sudo cp -fR cmake-3.0.1-Linux-i386/* /usr
   - rm -rf cmake-3.0.1-Linux-i386
+  - rm cmake-3.0.1-Linux-i386.tar.gz
 
 
 
