@@ -18,7 +18,7 @@ install:
   - rm bii-ubuntu32_1_3_3.deb
   - wget http://www.cmake.org/files/v3.0/cmake-3.0.1-Linux-i386.tar.gz
   - tar -xzf cmake-3.0.1-Linux-i386.tar.gz
-  - sudo mv -fR cmake-3.0.1-Linux-i386/* /usr
+  - sudo cp -fR cmake-3.0.1-Linux-i386/* /usr
   - rm -rf cmake-3.0.1-Linux-i386
 
 
