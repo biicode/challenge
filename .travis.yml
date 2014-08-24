@@ -5,10 +5,6 @@ language: cpp
 compiler:
   - gcc
 
-# Setup repos etc before installation
-before_install:
-  - sudo apt-get update -qq
-
 # Install dependencies
 install:
   # install biicode:
@@ -18,9 +14,9 @@ install:
 
 
 # command to run tests
-script: 
+script:
+  - pwd
   - bii find
-  - bii work
   - bii cpp:build
   - ./bin/biicode_challenge_solvertool  
   - ./bin/biicode_challenge_gtest_main
