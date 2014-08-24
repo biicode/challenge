@@ -1,10 +1,10 @@
 #include "systemsolver.h"
 
 #include <iostream>
-#include <eigen/Dense>
+#include <eigen/eigen/Dense>
 extern "C"
 {
-#include "csparse/cs.h"
+#include "tdavis/csparse/cs.h"
 }
 using namespace Eigen;
 

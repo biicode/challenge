@@ -1,6 +1,6 @@
 /*
  */
-#include "gtest/include/gtest/gtest.h"
+#include "google/gtest/include/gtest/gtest.h"
 #include "systemsolver.h"
 
 TEST(Solver, BasicDiagonalSparse) {
