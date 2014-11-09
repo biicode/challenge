@@ -1,7 +1,7 @@
 #include "systemsolver.h"
 
 #include <iostream>
-#include <eigen/eigen/Dense>
+#include <eigen/eigen/Eigen/Dense>
 extern "C"
 {
 #include "tdavis/csparse/cs.h"
