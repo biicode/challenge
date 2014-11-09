@@ -25,5 +25,5 @@ script:
 - bii find -um
 - bii cpp:build
 - cd bin
-- ./bin/myuser_solver_solvertool  
-- ./bin/myuser_solver_gtest_main
+- ./myuser_solver_solvertool  
+- ./myuser_solver_gtest_main
