@@ -19,8 +19,8 @@ install:
 script:
 - cmake --version
 - bii init biicode_project
-- mkdir -p ./biicode_project/blocks/myusername/myblockname
-- mv !(biicode_project) ./biicode_project/blocks/myusername/myblockname
+- mkdir -p ./biicode_project/blocks/myuser/solver
+- mv !(biicode_project) ./biicode_project/blocks/myuser/solver
 - cd biicode_project
 - bii find -um
 - bii cpp:build
