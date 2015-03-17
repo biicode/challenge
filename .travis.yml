@@ -10,20 +10,9 @@ install:
 - mv ubuntu64 bii-ubuntu64.deb
 - (sudo dpkg -i bii-ubuntu64.deb) && sudo apt-get -f install
 - rm bii-ubuntu64.deb
-- wget https://s3.amazonaws.com/biibinaries/thirdparty/cmake-3.0.2-Linux-64.tar.gz
-- tar -xzf cmake-3.0.2-Linux-64.tar.gz
-- sudo cp -fR cmake-3.0.2-Linux-64/* /usr
-- rm -rf cmake-3.0.2-Linux-64
-- rm cmake-3.0.2-Linux-64.tar.gz
+- bii setup:cpp
 
 script:
-- cmake --version
-- bii init biicode_project
-- mkdir -p ./biicode_project/blocks/myuser/solver
-- mv !(biicode_project) ./biicode_project/blocks/myuser/solver
-- cd biicode_project
-- bii find -um
-- bii cpp:build
-- cd bin
+- bii buzz
+- bii test
 - ./myuser_solver_solvertool  
-- ./myuser_solver_gtest_main
