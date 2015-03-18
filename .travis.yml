@@ -15,6 +15,5 @@ install:
 
 script:
 - bii buzz
+- ./bin/user_challenge_solvertool
 - bii test
-- bii build
-- ./bin/user_challenge_solvertool  
