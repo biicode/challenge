@@ -16,3 +16,20 @@ The project uses the following libraries:
 Eigen http://eigen.tuxfamily.org
 CSparse Version 3.1.0 http://www.cise.ufl.edu/research/sparse/CSparse/
 Google GTest https://code.google.com/p/googletest/
+
+
+Building with biicode
+===========================
+
+```bash
+$ git clone https://github.com/biicode/challenge.git
+$ cd challenge
+$ bii buzz
+```
+
+Now you can launch the "solvertool app" inside the "bin" directory
+If you want to build and run the unit tests, just:
+
+```bash
+$ bii test
+```
